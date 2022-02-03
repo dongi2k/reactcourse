@@ -18,14 +18,11 @@ const Expenses = (props) => {
     })
 
 
-
-
     return (
         <Card className={'expenses'}>
             <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}/>
-            <ExpensesChart expenses={filteredExpenses} />
-            <ExpensesList items={filteredExpenses} />
-
+            <ExpensesChart expenses={filteredExpenses}/>
+            <ExpensesList items={filteredExpenses}/>
 
             {/*<ExpenseItem*/}
             {/*    title={props.items[0].title}*/}
